@@ -61,7 +61,6 @@ const casesForVentilatorsByRequestedTimeEst = () => {
 };
 
 const dollarsInFlightEst = (data) => {
-
   impact.dollarsInFlight = Math.trunc((
     impact.infectionsByRequestedTime * data.region.avgDailyIncomePopulation * data.region.avgDailyIncomeInUSD) / data.timeToElapse);
   severeImpact.dollarsInFlight = Math.trunc((
