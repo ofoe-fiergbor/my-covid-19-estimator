@@ -60,7 +60,8 @@ const casesForVentilatorsByRequestedTimeEst = () => {
   severeImpact.casesForVentilatorsByRequestedTime = Math.trunc(0.05 * severeImpact.infectionsByRequestedTime);
 };
 const dollarsInFlightEst = (data) => {
-  const { region, timeToElapse } = data;
+  const { timeToElapse } = data;
+  const { region } = data;
 
   impact.dollarsInFlight = Math.trunc((impact.infectionsByRequestedTime * region.avgDailyIncomePopulation * region.avgDailyIncomeInUSD) / timeToElapse);
   severeImpact.dollarsInFlight = Math.trunc((severeImpact.infectionsByRequestedTime * region.avgDailyIncomePopulation * region.avgDailyIncomeInUSD) / timeToElapse);
