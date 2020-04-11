@@ -59,13 +59,15 @@ const casesForVentilatorsByRequestedTimeEst = () => {
   impact.casesForVentilatorsByRequestedTime = Math.trunc(0.05 * impact.infectionsByRequestedTime);
   severeImpact.casesForVentilatorsByRequestedTime = Math.trunc(0.05 * severeImpact.infectionsByRequestedTime);
 };
+
 const dollarsInFlightEst = (data) => {
-  const { timeToElapse } = data;
   const { region } = data;
+  const { timeToElapse } = data;
 
   impact.dollarsInFlight = Math.trunc((impact.infectionsByRequestedTime * region.avgDailyIncomePopulation * region.avgDailyIncomeInUSD) / timeToElapse);
   severeImpact.dollarsInFlight = Math.trunc((severeImpact.infectionsByRequestedTime * region.avgDailyIncomePopulation * region.avgDailyIncomeInUSD) / timeToElapse);
 };
+
 const covid19ImpactEstimator = (data) => {
   const estFunctions = () => {
     currentlyInfectedEst(data);
