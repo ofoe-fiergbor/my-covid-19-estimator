@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./syles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>COVID-19 ESTIMATOR</h1>
+        </header>
+    </div>
+    <div class="form">
+        <form class="tc">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Population</label>
+                        <input type="number" class="form-control" placeholder="Population">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Time To Elapse</label>
+                        <input type="number" class="form-control" placeholder="Time to Elapse">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Reported Cases</label>
+                        <input type="number" class="form-control" placeholder="Reported Cases">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Total Hospital Beds</label>
+                        <input type="number" class="form-control" placeholder="Total Hospital Beds">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Period Type</label>
+                        <select class="form-control">
+                            <option value="days">Days</option>
+                            <option value="weeks">Weeks</option>
+                            <option value="months">Months</option>
+                        </select>
+                    </div>
+                </div>
+                <center><button type="submit" class="btn btn-default btnC">Get Estimate</button></center>
+        </form>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
